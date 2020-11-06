@@ -27,7 +27,7 @@ The program has the ability to **change virus variables**, **change day count**,
 
 The equations for the model are:
 
-$\begin{aligned} \left\{ \begin{array}{l} \displaystyle \frac{dS}{dt} = - \frac{S}{N}\left( {{\beta _1}{I_1} + {\beta _2}{I_2} + \chi E} \right) + {\rho _1}Q - {\rho _2}S + \alpha R\\ \displaystyle \frac{dE}{dt} = \displaystyle \frac{S}{N}\left( {{\beta _1}{I_1} + {\beta _2}{I_2} + \chi E} \right) - {\theta _1}E - {\theta _2}E\\ \displaystyle \frac{dI_1}{dt} = {\theta _1}E - {\gamma _1}{I_1}\\ \displaystyle \frac{dI_2}{dt} = {\theta _2}E - {\gamma _2}{I_2} - \varphi {I_2} + \lambda \left( \varLambda + Q \right) \\ \displaystyle \frac{dR}{dt} = {\gamma _1}{I_1} + {\gamma _2}{I_2} + \phi H - \alpha R\\ \displaystyle \frac{dH}{dt} = \varphi {I_2} - \phi H\\ \displaystyle \frac{dQ}{dt} = \varLambda + {\rho _2}S - \lambda \left( {\varLambda + Q} \right) - {\rho _1}Q \end{array} \right. , \end{aligned}$
+![](https://i.imgur.com/JmarUrP.png)
 
 In code this is represented by: *(see variables below)*
 
