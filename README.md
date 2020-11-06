@@ -2,7 +2,7 @@
 
 EpidemiologyModeller is a project on representing viruses based on their properties. 
 
-![Untitled-1](https://i.imgur.com/L13vLzZ.png)
+![](https://i.imgur.com/L13vLzZ.png)
 
 *Note: Settings and default variables in screenshot above have been turned up to showcase the graph better. The model does not include real life variables such as mask usage, social distancing, etc. This is a virus modeller, not a scenario simulator.*
 
@@ -34,7 +34,7 @@ In code this is represented by: *(see variables below)*
 ```java
 double newS = S.get(day) + (-(S.get(day)/N) * (beta1 * I1.get(day) + beta2 * I2.get(day) + chi * E.get(day)) + rho1 * Q.get(day) - rho2 * S.get(day) + alpha * R.get(day));
 double newE = E.get(day) + ((S.get(day)/N) * (beta1 * I1.get(day) + beta2 * I2.get(day) + chi * E.get(day)) - theta1 * E.get(day) - theta2 * E.get(day));
- double newI1 = I1.get(day) + (theta1 * E.get(day) - gamma1 * I1.get(day));
+double newI1 = I1.get(day) + (theta1 * E.get(day) - gamma1 * I1.get(day));
 double newI2 = I2.get(day) + (theta2 * E.get(day) - gamma2 * I2.get(day) - phi * I2.get(day) + lambda * (delta + Q.get(day)));
 double newR = R.get(day) + (gamma1 * I1.get(day) + gamma2 * I2.get(day) + Phi * H.get(day) - alpha * R.get(day));
 double newH = H.get(day) + (phi * I2.get(day) - Phi * H.get(day));
@@ -124,7 +124,7 @@ Graphing is very simple. When initialising we create an array to hold each class
 ArrayList<ModelElement> elements = new ArrayList<>();
 
 public void initGraph() {
-  	elements = new ArrayList<>();
+  	 elements = new ArrayList<>();
     elements.add(new ModelElement("Susceptibles", core.S, new Color(30, 190, 255)));
     elements.add(new ModelElement("Exposed", core.E, Color.orange));
     elements.add(new ModelElement("Infected (I1)", core.I1, Color.red.darker()));
@@ -165,7 +165,7 @@ elements.get(6).array = core.R;
   
 for (ModelElement element : elements) {
   	paintArray(g, element.array, element.color);
-    paintKey(g, element.name, element.color);
+   paintKey(g, element.name, element.color);
 }
 ```
 
