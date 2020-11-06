@@ -99,21 +99,21 @@ In code these defaults are as shown:
 
 ```java
 int totalDays = 150; // How many days/times to loop
-    int N = 65653; // population
-    double alpha = 0.01; // immunity rate
-    double beta1 = 0.1; // contract rate
-    double beta2 = 0.3;
-    double chi = 0.4; // probability of transmission per contract
-    double theta1 = 0.01; // transition rate of exposure individuals to the infected class
-    double theta2 = 0.02;
-    double gamma1 = 0.05; // recovery rate of symptomatic individual to recovered
-    double gamma2 = 0.06;
-    double phi = 0.009; // rate of infectious with symptoms to hospitalised
-    double Phi = 0.008; // recovered rate of quarantined individuals
-    double lambda = 0.0004; // rate of quarantined class to the recovered class
-    double rho1 = 1.0 / 14.0; // transisistion rate of quarantined exposed between the quarantined infected
-    double rho2 = 0.002;
-    double delta = 1; // external input from foreign countries
+int N = 65653; // population
+double alpha = 0.01; // immunity rate
+double beta1 = 0.1; // contract rate
+double beta2 = 0.3;
+double chi = 0.4; // probability of transmission per contract
+double theta1 = 0.01; // transition rate of exposure individuals to the infected class
+double theta2 = 0.02;
+double gamma1 = 0.05; // recovery rate of symptomatic individual to recovered
+double gamma2 = 0.06;
+double phi = 0.009; // rate of infectious with symptoms to hospitalised
+double Phi = 0.008; // recovered rate of quarantined individuals
+double lambda = 0.0004; // rate of quarantined class to the recovered class
+double rho1 = 1.0 / 14.0; // transisistion rate of quarantined exposed between the quarantined infected
+double rho2 = 0.002;
+double delta = 1; // external input from foreign countries
 ```
 
 ### Graphing
@@ -124,7 +124,7 @@ Graphing is very simple. When initialising we create an array to hold each class
 ArrayList<ModelElement> elements = new ArrayList<>();
 
 public void initGraph() {
-  	 elements = new ArrayList<>();
+    elements = new ArrayList<>();
     elements.add(new ModelElement("Susceptibles", core.S, new Color(30, 190, 255)));
     elements.add(new ModelElement("Exposed", core.E, Color.orange));
     elements.add(new ModelElement("Infected (I1)", core.I1, Color.red.darker()));
@@ -164,7 +164,7 @@ elements.get(5).array = core.H;
 elements.get(6).array = core.R;
   
 for (ModelElement element : elements) {
-  	paintArray(g, element.array, element.color);
+   paintArray(g, element.array, element.color);
    paintKey(g, element.name, element.color);
 }
 ```
