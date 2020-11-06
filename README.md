@@ -27,7 +27,7 @@ The program has the ability to **change virus variables**, **change day count**,
 
 The equations for the model are:
 
-![](https://i.imgur.com/Mgghewp.png)
+![](https://i.imgur.com/WydASeg.png)
 
 In code this is represented by: *(see variables below)*
 
