@@ -84,7 +84,7 @@ for (int day = 1; day < totalDays + 1; day++) {
 | Parameter(s)            | Description                                                  | Code Variable Name | Default Value  |
 | ----------------------- | ------------------------------------------------------------ | ------------------ | -------------- |
 | $a$                     | Temporary immunity rate                                      | alpha              |  0.01          |
-| $\beta_1, $ $\beta_2$   | Contact rate                                                 | beta1, beta2       |  0.1,$ $0.3    |
+| $\beta_1, $ $\beta_2$   | Contact rate                                                 | beta1, beta2       |  0.1, 0.3      |
 | 𝜒                       | Probability of transmission per contract from exposed individuals | chi                |  0.4           |
 | $\theta_1, $ $\theta_2$ | Transition rate of exposed individuals to the infected classes | theta1, theta2     |  0.01, 0.02    |
 | $\gamma_1, \gamma_2$    | Recovery rate of symptomatic infected individuals to recovered | gamma1, gamma2     |  0.05, 0.06    |
