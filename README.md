@@ -2,7 +2,7 @@
 
 Configure and graph compartmental models in epidemiology;
 
-As done for my 2021 Computer Science A-Level.
+As done for a part of my 2021 Computer Science A-Level.
 
 ![](https://i.imgur.com/L13vLzZ.png)
 
