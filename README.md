@@ -2,6 +2,8 @@
 
 Configure and graph compartmental models in epidemiology;
 
+As done for my 2021 Computer Science A-Level.
+
 ![](https://i.imgur.com/L13vLzZ.png)
 
 *Note: Settings and default variables in screenshot above have been turned up to showcase the graph better. The model does not include real life variables such as mask usage, social distancing, etc. This is a virus modeller, not a scenario simulator.*
