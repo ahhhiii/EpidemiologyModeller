@@ -83,17 +83,17 @@ for (int day = 1; day < totalDays + 1; day++) {
 
 | Parameter(s)            | Description                                                  | Code Variable Name | Default Value  |
 | ----------------------- | ------------------------------------------------------------ | ------------------ | -------------- |
-| $a$                     | Temporary immunity rate                                      | alpha              |  0.01          |
-| $\beta_1, $ $\beta_2$   | Contact rate                                                 | beta1, beta2       |  0.1, 0.3      |
+| α                       | Temporary immunity rate                                      | alpha              |  0.01          |
+| β, Β                    | Contact rate                                                 | beta1, beta2       |  0.1, 0.3      |
 | 𝜒                       | Probability of transmission per contract from exposed individuals | chi                |  0.4           |
-| $\theta_1, $ $\theta_2$ | Transition rate of exposed individuals to the infected classes | theta1, theta2     |  0.01, 0.02    |
-| $\gamma_1, \gamma_2$    | Recovery rate of symptomatic infected individuals to recovered | gamma1, gamma2     |  0.05, 0.06    |
+| Θ, θ                    | Transition rate of exposed individuals to the infected classes | theta1, theta2     |  0.01, 0.02    |
+| γ, Γ                    | Recovery rate of symptomatic infected individuals to recovered | gamma1, gamma2     |  0.05, 0.06    |
 | 𝜑                       | Rate of infectious with symptoms to hospitalised             | phi                |  0.009         |
-| $\Phi$                  | Recovered rate of quarantined individuals                    | Phi                |  0.008         |
-| $\lambda$               | Rate of the quarantined class to the recovered class         | lambda             |  0.0004        |
-| $\rho_1, \rho_2$        | Transition rate of quarantined exposed between the quarantined infected class and the wider community | rho1, rho2         |  0.071, 0.002  |
-| $\Delta$                | External input from the foreign populations                  | delta              |  10            |
-| $N$                     | Population                                                   | N                  |  65,653        |
+| Φ                       | Recovered rate of quarantined individuals                    | Phi                |  0.008         |
+| λ                       | Rate of the quarantined class to the recovered class         | lambda             |  0.0004        |
+| ρ, ρ                    | Transition rate of quarantined exposed between the quarantined infected class and the wider community | rho1, rho2         |  0.071, 0.002  |
+| Δ                       | External input from the foreign populations                  | delta              |  10            |
+| N                       | Population                                                   | N                  |  65,653        |
 
 In code these defaults are as shown:
 
