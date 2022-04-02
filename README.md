@@ -1,6 +1,6 @@
 # EpidemiologyModeller
 
-EpidemiologyModeller is a project on representing viruses based on their properties. 
+Configure and graph compartmental models in epidemiology;
 
 ![](https://i.imgur.com/L13vLzZ.png)
 
